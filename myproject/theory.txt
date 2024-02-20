@@ -1,0 +1,41 @@
+installation---
+project creation
+app creation
+views---function---->function based views
+url
+multiple app
+url mapping--
+app----urls.py
+project---
+path('app1/',include('appl1.urls'))
+
+20-02-2024
+
+Passing an argument to a function
+
+127.0.0.0:8000/app1/edit/3
+views.py
+
+def function(request,x):
+    return HttpResponse("no of leacture taken"+x)
+
+urls.py
+
+path('one/<x>',views.function)
+
+Class based views
+In this views a class is defined which is inherited from inbuilt Django class View
+
+step1:
+import viewsclass from Django.views
+
+step2
+define a view class
+
+class Viewclassname(View):
+    def get(self,request):
+        body
+        return response
+    def post(self,request):
+        body
+        return response
