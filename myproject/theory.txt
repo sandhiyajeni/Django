@@ -39,3 +39,40 @@ class Viewclassname(View):
     def post(self,request):
         body
         return response
+
+21-02-2024
+
+Render 
+
+Html file
+
+step1:
+
+create a folder name as template in external project folder.
+
+step2:
+
+create a html file in template folder
+
+step3:
+
+interlink the html file in views.py
+
+def function_name(request):
+    return render(request,'html file name',data)
+
+step 4:
+
+then create a path in urls for that function in views
+
+step 5 
+
+if we run the project it will throw the error (Template Does not exist)
+
+To overcome that open setting.py(Project folder)
+In 59 line
+
+import os
+
+'DIRS': [os.path.join(BASE_DIR,'Template')],
+
