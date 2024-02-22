@@ -10,4 +10,7 @@ class admiralView(View):
         return HttpResponse("inside fun3 admiral class is there")
 
 def home(request):
-    return render(request,'simple.html')
+    a={}
+    a['x']=[{"id":1,"name":"abc"},{"id":2,"name":"bbb"}]
+    
+    return render(request,'simple.html',a)

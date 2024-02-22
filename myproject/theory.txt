@@ -76,3 +76,68 @@ import os
 
 'DIRS': [os.path.join(BASE_DIR,'Template')],
 
+22-04-2024
+
+how to pass a value in html file.
+step1
+
+def function_name(request):
+    return render(request,'html file name',data)
+
+def home(request):
+    a={}
+    a['name']='sandhiya'
+    return render(request,'simple.html',a)
+
+step2
+
+made change in simple.html file
+
+i am {{name}}
+
+DTL--Django Template Language
+Html----tagging Language
+
+if...else
+loop
+inheritance
+
+if...else
+syntax:
+{% if condition %}
+html content
+{% else %}
+html content
+{% endif %}
+
+views.py
+def home(request):
+    a={}
+    a['x']=10
+    a['y']=20
+    return render(request,'simple.html',a)
+
+simple.html
+
+<body>
+{% if x > y %}
+<h1>{{x}} is greater</h1>
+{% else %}
+<h1>{{y}} is greater</h1>
+{% endif %}
+</body>
+
+loop
+
+syntax:
+{% for i in x %}
+html
+{% endfor %}
+
+eg
+
+{% for i in x %}
+        <h1> id is {{i.id}}</h1>
+        <h1>name is {{i.name}}</h1>
+
+    {% endfor %}
