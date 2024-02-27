@@ -5,5 +5,5 @@ urlpatterns = [
     path('abc/',views.fun1),
     path('one/<x>',views.fun2),
     path('two/',admiralView.as_view()),
-    path('three/',views.home)
+    path('',views.home)
 ]

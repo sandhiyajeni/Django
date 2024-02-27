@@ -170,3 +170,43 @@ Jira Tools
 Scrum-Master 
 
 Jira Tools
+
+27-02-2024
+
+To add external css 
+
+step1:
+
+create folder named as static in external project folder
+
+step2
+
+create 3 folder in static folder
+named as css,js,images
+
+in css folder create a file name as style.css
+in js folder create a file name as script.js
+
+step3 
+
+style.css
+
+body{
+    background-color: aqua;
+    text-align: center;
+}
+
+script.js
+
+alert("welcome")
+
+step4
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<script src="{% static 'js/script.js' %}"></script>
+
+step5
+
+in setting.py
+
+STATICFILES_DIRS=[os.path.join(BASE_DIR,"static")]
