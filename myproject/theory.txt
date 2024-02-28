@@ -210,3 +210,34 @@ step5
 in setting.py
 
 STATICFILES_DIRS=[os.path.join(BASE_DIR,"static")]
+
+
+Testing
+
+emaild id_________
+password__________
+
+functionalities in web application
+
+login
+
+user registration
+
+add cart
+
+payment gateway
+
+place order
+
+each functionalities in that application is known as unit.
+
+unit testing:
+
+function which is unit is tested against certain condition is called unit testing 
+
+
+step1:
+
+to install pytest
+
+pip install pytest
